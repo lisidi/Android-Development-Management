@@ -81,7 +81,8 @@ public class CrimeListFragment extends Fragment {
 //                    .show();
 //            Intent intent = new Intent(getActivity(), CrimeActivity.class);
             //顺传
-            Intent intent = CrimeActivity.newIntent(getActivity(), mCrime.getId());
+//            Intent intent = CrimeActivity.newIntent(getActivity(), mCrime.getId());
+            Intent intent = CrimePagerActivity.newIntent(getActivity(), mCrime.getId());
             startActivity(intent);
 
         }
